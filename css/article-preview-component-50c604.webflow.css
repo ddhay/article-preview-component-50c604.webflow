@@ -1,0 +1,249 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.w-layout-hflex {
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+}
+
+.w-layout-vflex {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
+.section {
+  color: #9daec2;
+  background-color: #ecf2f8;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 800px;
+  display: flex;
+}
+
+.container {
+  max-width: 730px;
+  height: 280px;
+}
+
+.flex-block {
+  max-width: 730px;
+  height: 350px;
+  padding-right: 20px;
+}
+
+.heading {
+  color: #48556a;
+  letter-spacing: .25px;
+  max-width: 365px;
+  height: 84px;
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.paragraph {
+  color: #6e8098;
+  letter-spacing: .122px;
+  max-width: 365px;
+  height: 60px;
+  font-family: Manrope, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.image {
+  border-radius: 100px;
+}
+
+.div-block {
+  margin-left: 40px;
+}
+
+.flex-block-2 {
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 16px;
+  margin-right: 161px;
+}
+
+.text-block {
+  color: #48556a;
+  letter-spacing: .122px;
+  font-family: Manrope, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.text-block-2 {
+  letter-spacing: .122px;
+  font-family: Manrope, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.open-modal {
+  margin-top: 10px;
+  display: none;
+}
+
+.flex-block-3 {
+  position: relative;
+}
+
+.modal-wrapper {
+  z-index: 99999;
+  color: #48556a;
+  background-color: #5f7083;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  height: 70px;
+  margin-top: -20px;
+  margin-left: 151px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  position: absolute;
+  top: 71px;
+}
+
+.flex-block-4 {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.text-block-3 {
+  color: #030a13;
+  letter-spacing: 5px;
+  margin-right: 40px;
+  font-family: Manrope, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.div-block-3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 568px;
+    height: 667px;
+    padding: 74px 24px 81px;
+  }
+
+  .flex-block {
+    flex-flow: column;
+    height: 512px;
+  }
+
+  .heading {
+    max-width: 245px;
+    height: 72px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .paragraph {
+    max-width: 298px;
+  }
+
+  .div-block {
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    max-width: 285px;
+    height: 269px;
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .flex-block-2 {
+    margin-right: 40px;
+  }
+
+  .flex-block-3 {
+    margin-top: 57px;
+  }
+
+  .image-3 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .modal-wrapper {
+    max-width: 91%;
+    margin-left: 13px;
+    margin-right: -200px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .flex-block {
+    border-radius: 10px;
+  }
+
+  .div-block {
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .flex-block-2 {
+    letter-spacing: .122px;
+    max-width: 220px;
+    margin-right: 0;
+    font-size: 13px;
+  }
+
+  .open-modal {
+    margin-left: 25px;
+  }
+
+  .flex-block-3 {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .div-block-2, .image-3 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .modal-wrapper {
+    max-width: 103%;
+    margin-left: -2px;
+  }
+}
+
+
